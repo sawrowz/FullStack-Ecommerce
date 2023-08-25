@@ -1,0 +1,107 @@
+.cart{
+    margin-left: 2rem;
+}
+@media (max-width:490px) {
+    .navbar-brand{
+        width: 75%;
+    }
+    .sec-navbar{
+        top: -30px;
+    }
+    .cart{
+        margin-left: 1px;
+    }
+}
+.sec-navbar .container-fluid ul li a{
+    transition: 0.9s ease-in-out;
+
+}
+.sec-navbar .container-fluid ul li a:hover{
+    color: #f7f1e5;
+}
+.sec-navbar{
+    margin-top: 6.7rem;
+    padding: 0.1rem 0;
+    background-color:#b8b88f;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+
+}
+.menu-home{
+    margin: 7rem 0rem 2rem 0;
+    background-color: #f7f1e5;
+    width: 100vw;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+}
+
+.menu-home h1{
+    font-size: 5rem;
+}
+.menu-home {
+    font-size: 1.5rem;
+}
+.menu-list{
+    background-color: #4c4b16;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0.2rem;
+    z-index: 1;
+}
+.third-container{
+    width: 80vmax;
+}
+.third-container img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+}
+.card-row{
+    margin-left: 2rem;
+   
+}
+@media (max-width:1360px) {
+    .card-row{
+        font-size: 0.75rem;
+    }
+    .card-row .card{
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    
+}
+@media (max-width:400px) {
+    .card-row{
+        font-size: 0.75rem;
+    }
+    .card-row .card{
+        width: 15rem;
+        margin-top: 2rem;
+        margin-left: 0.1rem; 
+        margin-right: 0.9rem;
+        /* float: right; */
+    }
+    .image-col h1{
+        margin-left: 1.5rem;
+    }
+    
+}
+.image-col h1{
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    top: -60px;
+    position: relative;
+    color: #f7f1e5;
+    box-shadow: 1px 1px 10px black ;  
+    width: 20%;
+    display: flex;
+    justify-content: center;
+
+}

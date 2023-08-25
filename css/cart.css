@@ -1,0 +1,82 @@
+
+.cart-menu-home{
+    margin: 7rem 0rem 2rem 0;
+    background-color: #f7f1e5;
+    width: 100vw;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+}
+
+.cart-menu-home h1{
+    font-size: 5rem;
+}
+.cart-menu-home {
+    font-size: 1.5rem;
+}
+.cart-col
+{
+    /* height: 100vh; */
+    width: 80%;
+    margin: 0 auto;
+}
+.carth2{
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    background-color: #5e584d;
+    font-weight: 700;
+    color: #f7f1e5;
+}
+.form-col form{
+    margin: 2rem;
+    font-family: Raleway, sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+}
+.form-col form .odr{
+    background-color: #5e584d;
+    color: #f7f1e5;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+.form-col form input{
+
+    font-weight: 700;
+
+}
+.cartLi{
+    margin: 1rem 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #cbc7a1;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    list-style: none;
+    
+  
+}
+.cartBtn{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    position: relative;
+    float: right;
+    
+}
+.odr1{
+    padding: 1rem;
+    background-color: #5e584d;
+    color: #f7f1e5;
+
+}
+@media(max-width:420px){
+    .cartLi{
+    font-size: 15px;
+
+    }
+}

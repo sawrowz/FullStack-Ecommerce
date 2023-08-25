@@ -1,0 +1,21 @@
+.gallery-menu-home {
+    margin: 7rem 0rem 2rem 0;
+    background-color: #46423b;
+    color: white;
+    width: 100vw;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+}
+
+.gallery-menu-home h1 {
+    font-size: 5rem;
+}
+
+.gallery-menu-home {
+    font-size: 1.5rem;
+}

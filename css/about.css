@@ -1,0 +1,85 @@
+
+.about-menu-home{
+    margin: 7rem 0rem 0 0;
+    background-color: #f7f1e5;
+    width: 100vw;
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+}
+
+.about-menu-home h1{
+    font-size: 5rem;
+}
+.about-menu-home {
+    font-size: 1.5rem;
+}
+.about-img img{
+    position: relative;
+    width: 90%;
+}
+.about-container{
+    background: linear-gradient(#f7f1e5, #252509);
+
+}
+.about-us{
+    font-family: Raleway, sans-serif;
+    position: relative;
+
+}
+.about-us .text-h1 h1{
+    font-size: 50px;
+}
+.about-us .text-p{
+    font-size: 20px;
+}
+.about-us p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width:430px) {
+   
+    .about-us .text-p{
+        font-size: 15px;
+        width: 80%;
+        color: #f0e8d8;
+    }
+    .about-us p{
+        font-size: 15px;
+        font-weight: 700;
+        color: #f0e8d8;
+
+        
+    }
+    .about-us .text-h1 h1{
+        font-size: 30px;
+        position: relative;
+        margin-left: 0;
+        color: #f0e8d8;
+
+    }
+}
+
+@media (max-width:1130px) {
+    .about-img img{
+        opacity: 0.7;
+    }
+    .about-us .text-p{
+        font-size: 15px;
+        width: 80%;
+    }
+    .about-us p{
+        font-size: 15px;
+        font-weight: 700;
+        
+    }
+    .about-us .text-h1 h1{
+        font-size: 30px;
+        position: relative;
+    }
+}

@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    font-family: Oswald, sans-serif;
+    position: fixed;
+    background-color: white;
+    width: 103vw;
+    z-index: 1;
+
+
+}
+
+@media (max-width:490px) {
+    .navbar-brand {
+        width: 75%;
+    }
+
+    .col-md-9 img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+}
+
+.container-fluid a img {
+    width: 25%;
+    /* margin-left: 0.75rem; */
+}
+
+.cart {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.cart a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.cart a:hover {
+    opacity: 0.7;
+   
+}
+
+.navbar .order {
+    border: 2px solid black;
+    color: black;
+    transition: 1s;
+    padding: 0.75rem;
+    background-color: transparent;
+
+}
+
+.navbar .order:hover {
+    background-color: #e7b10a;
+    color: #f7f4ee;
+    padding: 0.3rem 1.75rem;
+    border: 2px solid #e7b10a;
+
+}
+
+.navbar ul li {
+    margin-left: 2rem;
+    opacity: 1;
+}
+
+/* .main{
+    width: 1500px;
+    margin: 0 20px;
+} */
+.container {
+    max-width: 100vw;
+    /* padding-right: 15px;
+  padding-left: 15px; */
+    /* margin-right: auto;
+  margin-left: auto; */
+
+}
+
+.home-photo img {
+    width: 100%;
+    /* margin-left: 1rem; */
+}
+
+
+#herosection .container {
+    background-color: #f7f4ee;
+    /* margin: 0 30px; */
+
+}
+
+#herosection .row .col-md-3 {
+    padding: 20px;
+    /* Adjust the padding value as per your requirement */
+    margin-top: 15rem;
+
+}
+
+#herosection .container .col-md-3 h1 {
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    color: #4c4b16;
+    /* margin-top: 15rem; */
+}
+
+.col-md-3 p {
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    color: #4c4b16;
+    margin-top: 30px;
+
+}
+
+.col-md-3 h1 {
+    font-size: 30px;
+
+}
+
+.col-md-3 .button1 {
+    border: 2px solid #e7b10a;
+    border-radius: 0;
+    width: 100%;
+    height: 100px;
+    transition: 1s;
+    margin-top: 2rem;
+}
+
+.col-md-3 .button1:hover {
+    background-color: #e7b10a;
+    color: #f7f4ee;
+    padding: 20px;
+    height: 130px;
+}
+
+.col-md-3 {
+    padding: 0;
+
+
+}
+
+.col-md-9 img {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 6rem;
+
+
+}
+
+@media (max-width:1430px) {
+    .col-md-9 img {
+        width: 100%;
+        height: 85%;
+    }
+}
+
+@media (max-width:1275px) {
+    .col-md-9 img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .col-md-3 h1 {
+        font-size: 0.2rem;
+
+    }
+
+}
+
+@media (max-width:1100px) and (min-width:768px) {
+    .col-md-9 img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+
+    .home-text {
+        font-weight: 700;
+    }
+}
+
+
+#herosection2 .container {
+    /* margin: 30px; */
+    padding: 30px;
+
+
+}
+
+#herosection2 .container h1 {
+    font-family: Raleway, sans-serif;
+    padding: 50px;
+    font-size: 60px;
+
+}
+
+#herosection2 .container .row {
+    margin: 0;
+    padding: 30px;
+
+}
+
+#herosection2 .container .row .col-4 {
+    margin: 0 0px;
+
+
+}
+
+/* .carousel-container {
+    margin: 0 25%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.card-body {
+    padding: 1rem;
+    font-family: Roboto, sans-serif;
+    background-color: #f7f4ee;
+}
+
+.card img {
+    padding: 0.2rem;
+    border-radius: 0.75rem;
+}
+
+.card {
+    transition: 0.8s ease-in-out;
+
+}
+
+.card:hover {
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.card-body .button1 {
+    border: 2px solid #e7b10a;
+    border-radius: 0;
+    width: 70%;
+    height: 50px;
+    transition: 1s;
+}
+
+.card-body .button1:hover {
+    background-color: #e7b10a;
+    padding: 20px;
+    height: 70px;
+}
+
+#herosection3 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#herosection3 .container .row .carousel-item .col-md-4 .card {
+    margin: 2rem;
+}
+
+#herosection3 .container h1 {
+    font-family: Raleway, sans-serif;
+    padding: 30px;
+    margin: 2rem 0rem;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+.strap {
+    background-color: #4c4b16;
+    color: #f7f4ee;
+    padding: 5.5rem;
+}
+
+
+.strap .col-md-4 .div {
+    margin: 1rem;
+}
+
+.strap .col-md-4 .div i {
+    font-size: 3rem;
+    color: #e2f08f;
+
+}
+
+.strap .col-md-4 .div i:hover {
+    opacity: 0.7;
+}
+
+.strap .col-md-4 .payment a {
+    text-decoration: none;
+    color: #f7f4ee;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+}
+
+.strap .col-md-4 .payment P {
+    font-family: Raleway, sans-serif;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+    justify-content: space-around;
+    margin: 0 0rem;
+
+}
+
+#herosection4 {
+    background-image: url("images/bkimage.png");
+    background-size: 80% 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+    overflow-x: hidden;
+}
+
+.test-col {
+    margin-left: 13rem;
+}
+
+@media (max-width:1100px) {
+    #herosection4 {
+        background-size: 100% 90%;
+
+    }
+
+    #herosection4 .container .col {
+        margin: 3rem;
+    }
+
+    .text-h1 h1 {
+        font-size: 30px;
+        margin-left: 2rem;
+    }
+
+    .text-p {
+        font-size: 10px;
+        margin-bottom: 5rem;
+        margin-left: 2rem;
+    }
+
+}
+
+@media (max-width:860px) {
+    #herosection4 {
+        background-size: 100% 80%;
+        overflow-x: hidden;
+    }
+
+    .text-p {
+        margin-left: 2rem;
+    }
+
+    .rating {
+        margin-left: 2rem;
+
+    }
+    .test-col {
+        margin-left: 5em;
+    }
+
+
+}
+
+@media (max-width:670px) {
+    #herosection4 {
+        background-size: 120% 90%;
+    }
+
+    .text-h1 {
+        margin-left: 2rem;
+
+    }
+
+    .text-p {
+        margin-left: 2rem;
+    }
+
+    .test-1 .bg1 h1 {
+        font-size: 20px;
+    }
+    .test-col {
+        margin-left: 0.1em;
+    }
+
+}
+
+@media (max-width:550px) {
+    #herosection4 {
+        background-size: 120% 80%;
+    }
+    .text-h1 {
+        margin-left: 2rem;
+    }
+
+    .text-p {
+        margin-left: 2rem;
+    }
+
+    .test-1 .bg1 h1 {
+        font-size: 20px;
+    }
+
+    .test-img img {
+        float: left;
+    }
+
+    .test-img {
+        left: 0;
+
+    }
+
+}
+
+@media (max-width:400px) {
+
+    #herosection4 {
+        background-size: 150% 70%;
+    }
+    
+
+}
+
+
+#herosection4 .container {
+    /* max-width: 100vmax; */
+    /* margin-right: 34rem; */
+    font-family: Raleway, sans-serif;
+}
+
+#herosection4 .container .row {
+    margin-left: 3rem;
+}
+
+.text-h1 h1 {
+    font-size: 40px;
+
+}
+
+.text-p {
+    font-size: 15px;
+    margin-bottom: 5rem;
+    width: 50%;
+}
+
+
+.test-img {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    /* justify-content: center; */
+}
+
+.testimonials .test-img img {
+    margin-right: 1rem;
+    width: 10%;
+    border-radius: 3rem;
+}
+
+.test-img p {
+    font-weight: 600;
+}
+
+.testimonials .test-1 .bg1 {
+    background-color: #f7f4ee;
+    width: 80%;
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.testimonials .test-1 .bg1 i {
+    color: #ffbf00;
+
+}
+
+.accordion {
+    font-size: 20px;
+
+}
+
+.accordion-header button {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f7f4ee;
+}
+
+.accordion-item {
+    background-color: #5a4926;
+    color: #f7f4ee;
+    margin: 20px 0;
+    font-family: Raleway, sans-serif;
+
+}
+
+
+footer {
+    background-color: #393811;
+    margin-left: 0.1rem;
+    padding: 0.75rem;
+    color: #7c5a16;
+}
+
+.bottomfooter {
+    background-color: #2f2e0d;
+    height: 420px;
+    left: 0px;
+    color: #f7f4ee;
+}
+
+@media (max-width:800px) {
+    .bottomfooter {
+        font-size: 20px;
+        margin-right: 0 0.3rem;
+        height: 1100px
+    }
+}
+
+@media (max-width:600px) {
+    .bottomfooter {
+        font-size: 20px;
+        margin-left: 0.2rem;
+        height: 1100px
+    }
+
+    .footerlist ul li {
+        flex-direction: row;
+    }
+}
+
+.bottomfooter .logo {
+    width: 20%;
+}
+
+.footerlist ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+.footerlist ul a {
+    color: white;
+    text-decoration: none;
+
+}
+.user-profile{
+    text-decoration: none;
+    color: #2f2e0d;
+    cursor: pointer;
+}
