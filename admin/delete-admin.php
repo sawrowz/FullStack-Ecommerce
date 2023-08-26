@@ -1,6 +1,4 @@
 <?php
-ob_start(); // Flush the buffered output
-
     include('../config/constants.php');
     $id = $_GET['id'];
 
@@ -18,6 +16,4 @@ ob_start(); // Flush the buffered output
         $_SESSION['delete'] = '<div style="color:green">Admin Delete Failed</div>';
         header('location:'.SITEURL.'admin/manage-admin.php');
     }
-ob_end_flush(); // Flush the buffered output
-
 ?>

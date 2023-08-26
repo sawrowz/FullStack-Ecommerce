@@ -1,6 +1,4 @@
-<?php 
-ob_start(); 
-include('partials/menu.php'); ?>
+<?php include('partials/menu.php'); ?>
 <div class="main-content">
     <div class="wrapper">
         <h1>Add Admin</h1>
@@ -50,7 +48,7 @@ include('partials/menu.php'); ?>
     {
         $full_name = $_POST['full_name'];
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         $sql = "INSERT INTO tbl_admin SET
             full_name='$full_name',
@@ -71,6 +69,5 @@ include('partials/menu.php'); ?>
         }
     }
     
-    ob_end_flush(); // Flush the buffered output
 
 ?>

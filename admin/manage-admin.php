@@ -1,6 +1,4 @@
-<?php
-ob_start();
-include('partials/menu.php'); ?>
+<?php include('partials/menu.php'); ?>
 
     <div class="main-content">
          <div class="wrapper">
@@ -73,9 +71,9 @@ include('partials/menu.php'); ?>
                                     <td><?php echo $full_name; ?></td>
                                     <td><?php echo $username ?></td>
                                     <td>
-                                       <a href="<?php echo SITEURL;?>admin/update-password.php?id=<?php echo $id;?>"><button style="background-color: rgb(59, 83, 190);" class="admin-update">Change Password</button></a> 
-                                       <a href="<?php echo SITEURL;?>admin/update-admin.php?id=<?php echo $id;?>"><button class="admin-update">Update Admin</button></a> 
-                                        <a href="<?php echo SITEURL;?>admin/delete-admin.php?id=<?php echo $id;?>"><button class="admin-delete">Delete Admin</button></a>
+                                       <a href="<?php echo SITEURL;?>admin/update-password.php?id=<?php echo $id;?>"><button class="admin-password">  <i class="bi bi-file-lock"></i></button></a> 
+                                       <a href="<?php echo SITEURL;?>admin/update-admin.php?id=<?php echo $id;?>"><button  class="admin-update"><i class="bi bi-pencil-square"></i></button></a> 
+                                        <a href="<?php echo SITEURL;?>admin/delete-admin.php?id=<?php echo $id;?>"><button class="admin-delete"><i class="bi bi-trash3-fill"></i></button></a>
                                     </td>
                                 </tr>
 
@@ -93,6 +91,4 @@ include('partials/menu.php'); ?>
     </div>
 
 
-    <?php 
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php'); ?>
+    <?php include('partials/footer.php'); ?>

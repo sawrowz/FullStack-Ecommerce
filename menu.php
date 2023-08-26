@@ -1,6 +1,4 @@
-<?php 
-ob_start();
-include('front-partials/header.php');?>
+<?php include('front-partials/header.php');?>
 
         <!-- 2nd nav bar for menu -->
         <section>
@@ -194,8 +192,6 @@ include('front-partials/header.php');?>
        
 
     </script>
-    <?php 
-ob_end_flush(); // Flush the buffered output
-include('front-partials/footer.php');?>
+    <?php include('front-partials/footer.php');?>
 
 

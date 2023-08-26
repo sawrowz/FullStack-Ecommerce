@@ -1,6 +1,4 @@
-<?php
-ob_start();
-include('config/constants.php'); ?>
+<?php include('config/constants.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -163,7 +161,6 @@ include('config/constants.php'); ?>
         }
     }
     
-    ob_end_flush(); // Flush the buffered output
 
 ?>
     </div>

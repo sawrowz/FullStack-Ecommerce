@@ -1,6 +1,4 @@
 <?php
-ob_start();
-
     //user login 
     if(!isset($_SESSION['user']))
     {
@@ -8,6 +6,5 @@ ob_start();
         header("location:".SITEURL.'admin/login.php');
         
     }
-    ob_end_flush(); // Flush the buffered output
 
 ?>

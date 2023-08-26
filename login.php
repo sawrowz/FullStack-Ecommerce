@@ -1,7 +1,4 @@
-<?php
-
-include('config/constants.php');
-ob_start(); ?>
+<?php include('config/constants.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -152,15 +149,12 @@ ob_start(); ?>
         $_SESSION['login'] ='<h5 style="font-weight:700; color:green">Login Successful</h5>';
         $_SESSION['userf'] = $username."<i class='bi bi-person-circle'></i>";
         header("location:".SITEURL.'home.php');
-        die();
       }
       else{
         $_SESSION['login'] ='<h5 style="font-weight:700; color:red">Enter Correct Username or Password</h5>';
         header("location:".SITEURL.'login.php');
-        die();
       }
 
     }
-    ob_end_flush(); // Flush the buffered output
 
 ?>

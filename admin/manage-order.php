@@ -1,9 +1,7 @@
-<?php
-ob_start();
-include('partials/menu.php');?>
+<?php include('partials/menu.php');?>
 <div class="main-content">
-    <div class="wrapper">
-        <h1>MANAGE ORDER</h1>
+    <div class="wrapper order">
+        <h1 class="m-h1">MANAGE ORDER</h1><br>
 
 
 
@@ -64,22 +62,22 @@ include('partials/menu.php');?>
                                 if($status=="Ordered")
                                 {
 
-                                    echo "<p style='background-color:skyblue; padding:6px; font-size:10px; color:white;'>$status</p>";
+                                    echo "<p style='background-color:skyblue; padding:6px; font-size:10px; color:white;' class='status'>$status</p>";
                                 }
                                elseif($status=="On Delivery")
                                 {
 
-                                    echo "<p style='background-color:orange; padding:16px; font-size:10px;  color:white;'>$status</p>";
+                                    echo "<p style='background-color:orange; padding:16px; font-size:10px;  color:white;' class='status'>$status</p>";
                                 }
                                 elseif($status=="Delivered")
                                 {
 
-                                    echo "<p style='background-color:green; padding:6px; font-size:10px; color:white;'>$status</p>";
+                                    echo "<p style='background-color:green; padding:6px; font-size:10px; color:white;' class='status'>$status</p>";
                                 }
                                 else
                                 {
 
-                                    echo "<p style='background-color:red; padding:6px; font-size:10px; color:white;'>$status</p>";
+                                    echo "<p style='background-color:red; padding:6px; font-size:10px; color:white;' class='status'>$status</p>";
                                 }
                                 ?>
                             </td>
@@ -93,7 +91,7 @@ include('partials/menu.php');?>
 
                         
                             <td>
-                                <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>"><button class="admin-update">Update Order</button></a> 
+                                <a href="<?php echo SITEURL;?>admin/update-order.php?id=<?php echo $id;?>"><button class="admin-update"><i class="bi bi-pencil-square"></i></button></a> 
                             </td>
                       </tr>
                             <?php
@@ -114,6 +112,4 @@ include('partials/menu.php');?>
     </div>
 </div>
 
-<?php
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php') ?>
+<?php include('partials/footer.php') ?>

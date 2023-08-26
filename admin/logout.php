@@ -1,5 +1,4 @@
 <?php
-ob_start();
 
     include('../config/constants.php');
 
@@ -9,6 +8,5 @@ ob_start();
 
     header("location:".SITEURL.'admin/login.php');
     
-    ob_end_flush(); // Flush the buffered output
 
 ?>

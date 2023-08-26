@@ -1,5 +1,4 @@
 <?php 
-ob_start();
 
     include('../config/constants.php');
 
@@ -46,6 +45,5 @@ ob_start();
         header('location:'.SITEURL.'admin/manage-food.php');
     }
 
-    ob_end_flush(); // Flush the buffered output
 
 ?>

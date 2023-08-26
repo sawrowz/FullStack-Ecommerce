@@ -1,9 +1,6 @@
 
 
-<?php 
-
-include('front-partials/header.php');
-ob_start();?>
+<?php include('front-partials/header.php');?>
 
 
 
@@ -493,7 +490,5 @@ ob_start();?>
     </section>
 
 
-    <?php 
-ob_end_flush(); // Flush the buffered output
-include('front-partials/footer.php');?>
+    <?php include('front-partials/footer.php');?>
 

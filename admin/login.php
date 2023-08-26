@@ -1,7 +1,4 @@
-<?php 
-
-include('../config/constants.php') ;
-ob_start();?>
+<?php include('../config/constants.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +44,7 @@ ob_start();?>
     if(isset($_POST['submit']))
     {
       $username = mysqli_real_escape_string($conn, $_POST['username']);
-      $password = mysqli_real_escape_string($conn, $_POST['password']);
+      $password = mysqli_real_escape_string($conn, md5($_POST['password']));
 
       $sql = "SELECT * FROM tbl_admin WHERE username='$username' AND password='$password'";
 
@@ -65,6 +62,5 @@ ob_start();?>
       }
 
     }
-    ob_end_flush(); // Flush the buffered output
 
 ?>

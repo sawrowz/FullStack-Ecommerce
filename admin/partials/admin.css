@@ -26,30 +26,100 @@
     float:none;
     clear:both;
 }
+.icon{
+    color: #1a2008;
+}
 .tbl-full
 {
+    background-color: #f8f8f0;
     width: 100%;
+    border-radius: 20px;
+}
+@media(max-width:550px)
+{
+    table tr td{
+        font-size: 13px;
+    }
+
+}
+@media(max-width:480px)
+{
+    table tr th,td{
+        font-size: 8px;
+    }
+    button{
+        font-size: 8px;
+    }
+    img{
+        width: 60px;
+    }
 }
 .t1{
     font-size: 14px;
     border: 1px solid black;
+    padding: 10px;
+    overflow-x: hidden;
 }
+@media(max-width:912px)
+{
+    .t1{
+        font-size: 8px;
+    }
+    .t1 button{
+        font-size: 10px;
+    }
+    .status{
+        padding: 0.1px;
+        font-size: 1px;
+
+    }
+}
+@media(max-width:566px)
+{
+    .t1{
+        font-size: 6px;
+    }
+    .t1 button{
+        font-size: 20px;
+
+    }
+    .status{
+        font-size: 2px;
+
+    }
+    .order
+    {
+        overflow: scroll;
+    }
+    
+    
+}
+
 .t1 tr th{
     border-bottom: 1px solid black;
+    font-size: 10px;
+    padding: 10px;
     
 }
 .t1 tr td{
     border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: center;
 
+    
 }
 table tr th{
     border-bottom: 1px solid black;
+    background-color: #1a2008;
+    color: #f1ebe3;
     padding: 1%;
     text-align: center;
 }
 table tr td{
-    padding: 1%;
+    padding: 10px;
     text-align: center;
+    border-bottom: 1px solid black;
+
 }
 .footer{
     background-color: #323608;
@@ -81,6 +151,10 @@ table tr td{
     padding: 3% 0;
 
 }
+table tr:nth-child(odd) {
+    background-color: #e0e0d9; /* Color for odd rows */
+}
+
 .col-4
 {
     width: 18%;
@@ -88,29 +162,111 @@ table tr td{
     margin: 1%;
     padding: 2%;
     float: left;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 100px;
+}
+.icon{
+    font-size: 4rem;
+    opacity: 0.7;
+}
+@media (max-width:1200px)
+{
+    .col-4 .name{
+        font-size: 15px;
+    }
+    .icon{
+        font-size: 3rem;
+        opacity: 0.6;
+    }
+}
+@media (max-width:900px)
+{
+    .col-4 .name{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 2.5rem;
+        opacity: 0.6;
+    }
+    .dashboard{
+        height: 70vh;
+    }
+}
+@media (max-width:700px)
+{
+    .col-4 .name{
+        font-size: 10px;
+    }
+    .col-4{
+        flex-direction: column;
+
+    }
+    .icon{
+        font-size: 2.5rem;
+        opacity: 0.6;
+    }
+    .dashboard{
+        height: 70vh;
+    }
+}
+@media (max-width:450px)
+{
+    .col-4 .name{
+        font-size: 9px;
+    }
+    .col-4{
+        margin: 15px;
+       width: 19%;
+    }
+    .icon{
+        font-size: 2rem;
+        opacity: 0.6;
+    }
+    .dashboard{
+        height: 70vh;
+    }
+   
 }
 .admin-update{
     padding: 1%;
-    background-color: rgb(47, 218, 112);
+    background-color: rgb(1, 95, 37);
     color: #f1f2f6;
+    font-size: 20px;
+    border-radius: 5px;
+
+
 
 }
 .admin-password{
     padding: 1%;
-    background-color: rgb(59, 83, 190);
+    background-color: rgb(17, 44, 163);
     color: #f1f2f6;
+    font-size: 20px;
+    margin: 0 0.4rem;
+    border-radius: 5px;
+
 
 }
 .admin-delete{
     padding: 1%;
-    background-color: #f0858e;
+    background-color: #be0615;
     color: #f1f2f6;
+    font-size: 20px;
+    margin: 0 0.4rem;
+    border-radius: 5px;
+
+
 
 }
+
 .add-admin{
     background-color: #646650;
     color: #f1f2f6;
     padding: 1%;
+    border-radius: 5px;
+
 }
 .admin-tbl
 {

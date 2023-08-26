@@ -1,6 +1,4 @@
-<?php
-ob_start();
-include('partials/menu.php');?>
+<?php include('partials/menu.php');?>
 <div class="main-content">
     <div class="wrapper">
         <h1>MANAGE FOOD</h1><br>
@@ -34,7 +32,7 @@ include('partials/menu.php');?>
 
         <br>
         <a href="<?php echo SITEURL;?>admin/add-food.php"> <button class="add-admin">Add Food</button></a>
-            <br>
+            <br><br>
             <table class="tbl-full">
                 <tr>
                     <th>SN</th>
@@ -88,8 +86,8 @@ include('partials/menu.php');?>
 
                         
                             <td>
-                                <a href="<?php echo SITEURL;?>admin/update-food.php?id=<?php echo $id;?>"><button class="admin-update">Update Food</button></a> 
-                                <a href="<?php echo SITEURL;?>admin/delete-food.php?id=<?php echo $id;?>&image_name=<?php echo $image_name;?>"><button class="admin-delete">Delete Food</button></a>
+                                <a href="<?php echo SITEURL;?>admin/update-food.php?id=<?php echo $id;?>"><button class="admin-update"><i class="bi bi-pencil-square"></i></button></a> 
+                                <a href="<?php echo SITEURL;?>admin/delete-food.php?id=<?php echo $id;?>&image_name=<?php echo $image_name;?>"><button class="admin-delete"><i class="bi bi-trash3-fill"></i></button></a>
                             </td>
                       </tr>
                             <?php
@@ -110,6 +108,4 @@ include('partials/menu.php');?>
     </div>
 </div>
 
-<?php 
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php') ?>
+<?php include('partials/footer.php') ?>

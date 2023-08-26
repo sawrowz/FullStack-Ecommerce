@@ -1,6 +1,4 @@
-<?php
-ob_start();
-include('partials/menu.php');?>
+<?php include('partials/menu.php');?>
 <div class="main-content">
     <div class="wrapper">
         <h1>MANAGE CATEGORY</h1><br>
@@ -94,8 +92,8 @@ include('partials/menu.php');?>
 
                         
                             <td>
-                                <a href="<?php echo SITEURL;?>admin/update-category.php?id=<?php echo $id;?>"><button class="admin-update">Update Category</button></a> 
-                                <a href="<?php echo SITEURL;?>admin/delete-category.php?id=<?php echo $id;?>&image_name=<?php echo $image_name;?>"><button class="admin-delete">Delete Category</button></a>
+                                <a href="<?php echo SITEURL;?>admin/update-category.php?id=<?php echo $id;?>"><button class="admin-update"><i class="bi bi-pencil-square"></i></button></a> 
+                                <a href="<?php echo SITEURL;?>admin/delete-category.php?id=<?php echo $id;?>&image_name=<?php echo $image_name;?>"><button class="admin-delete"><i class="bi bi-trash3-fill"></i></button></a>
                             </td>
                       </tr>
                             <?php
@@ -116,6 +114,4 @@ include('partials/menu.php');?>
     </div>
 </div>
 
-<?php 
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php') ?>
+<?php include('partials/footer.php') ?>

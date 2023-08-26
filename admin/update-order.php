@@ -1,6 +1,4 @@
-<?php 
-ob_start();
-include('partials/menu.php');?>
+<?php include('partials/menu.php');?>
 <div class="main-content">
     <div class="wrapper">
         <h1>UPDATE ORDER</h1>
@@ -97,6 +95,4 @@ include('partials/menu.php');?>
 
 
 
-<?php
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php');?>
+<?php include('partials/footer.php');?>

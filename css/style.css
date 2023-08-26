@@ -320,7 +320,7 @@ body {
 }
 
 #herosection4 {
-    background-image: url("images/bkimage.png");
+    background-image: url("http://localhost/PHP/images/bkimage.png");
     background-size: 80% 120%;
     background-position: center;
     background-repeat: no-repeat;

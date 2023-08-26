@@ -1,5 +1,5 @@
 <?php 
-ob_start();
+
     include('../config/constants.php');
 
     if(isset($_GET) AND isset($_GET['image_name']))
@@ -43,6 +43,5 @@ ob_start();
         header('location:'.SITEURL.'admin/manage-category.php');
     }
 
-    ob_end_flush(); // Flush the buffered output
 
 ?>

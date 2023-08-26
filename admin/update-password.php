@@ -1,6 +1,4 @@
-<?php
-ob_start();
-include('partials/menu.php'); ?>
+<?php include('partials/menu.php'); ?>
 
 <div class="main-content">
     <div class="wrapper">
@@ -54,9 +52,9 @@ include('partials/menu.php'); ?>
     if(isset($_POST['submit']))
     {
         $id = $_POST['id'];
-        $current_password = $_POST['current_password'];
-        $new_password = $_POST['new_password'];
-        $confirm_password = $_POST['confirm_password'];
+        $current_password = md5($_POST['current_password']);
+        $new_password = md5($_POST['new_password']);
+        $confirm_password = md5($_POST['confirm_password']);
 
         $sql = "SELECT * FROM tbl_admin WHERE id=$id AND password='$current_password'";
 
@@ -103,6 +101,4 @@ include('partials/menu.php'); ?>
     }
 
 ?>
-<?php
-ob_end_flush(); // Flush the buffered output
-include('partials/footer.php'); ?>
+<?php include('partials/footer.php'); ?>
